@@ -23,7 +23,7 @@ def get_weather_by_property(date, time, property=None):
 			if date_text == date and time_text == time:
 				answer_dict = {'description': entry['weather'][0]['description'],
 						'temperature': str(math.ceil((entry['main']['temp'] - 32.0)*5.0/9.0)) + 'c',
-						'pressure': entry['main']['pressure'],
+						'pressure': str(entry['main']['pressure']),
 						'humidity': str(entry['main']['humidity']) + '%',}
 				if property:
 					answer = {property: answer_dict[property]}
