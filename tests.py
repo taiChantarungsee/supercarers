@@ -1,9 +1,6 @@
 import unittest
 from main import app
-
-"""NOTE: Running the test will generate a resource warning in addition to the test results. This is a problem with
-Python3 and therefore can't be directly resolved yet"""    
-
+   
 class TestCase(unittest.TestCase):
 
     def setUp(self): 
